@@ -13,7 +13,7 @@ import datetime
 
 from streamlit_navigation_bar import st_navbar
 
-#page = st_navbar(["Home", "News", "Insights", "Community", "About"])
+page = st_navbar(["Home", "News", "Insights", "Community", "About"])
 #st.write(page)
 
 
