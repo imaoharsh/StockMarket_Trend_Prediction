@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import pandas_datareader.data as data
 import datetime as dt
-from tensorflow.keras.models import load_model
+from keras.models import load_model
 import streamlit as st
 from sklearn.preprocessing import MinMaxScaler
 import base64

@@ -12,3 +12,4 @@ tensorflow
 Nasdaq-Data-Link
 tensorflow~=2.16.1 
 keras~=3.0
+keras_core
