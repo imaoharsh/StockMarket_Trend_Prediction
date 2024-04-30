@@ -1,0 +1,3 @@
+a81e1e4d25a74bcca5d568645cb66ecb
+
+overfitting : high train accurarcy low test accur   arcy
