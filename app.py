@@ -9,7 +9,7 @@ from sklearn.preprocessing import MinMaxScaler
 import base64
 import hydralit_components as hc
 import datetime
-
+import nasdaqdatalink as link
 
 from streamlit_navigation_bar import st_navbar
 
@@ -47,10 +47,10 @@ if page == "Home":
     
     
 
-    user_input=st.text_input('Enter Stock Ticker','AAPL')
-    df = data.DataReader(user_input, 'stooq')
+    #user_input=st.text_input('Enter Stock Ticker','AAPL')
+    #df = data.DataReader(user_input, 'stooq')
 
-
+    df = link.get("WSE/WIG20TR")
     #Describing Data
 
     st.subheader('Date from 2010 - 2024')
