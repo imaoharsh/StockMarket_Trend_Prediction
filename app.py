@@ -3,12 +3,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import pandas_datareader.data as data
 import datetime as dt
-
+import tensorflow as tf
 import streamlit as st
 from sklearn.preprocessing import MinMaxScaler
 import base64
 import hydralit_components as hc
-import tensorflow.keras as keras
+import tf.keras as keras
 from keras.models import load_model
 
 import nasdaqdatalink as link
@@ -105,7 +105,7 @@ if page == "Home":
     data_training_array=scaler.fit_transform(data_training)
 
         
-    model=load_model('stock_model.h5')
+    model=tf.keras.models.load_model('stock_model.h5')
 
 
     past_100_days=data_training.tail(100)
