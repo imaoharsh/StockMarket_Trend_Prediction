@@ -54,7 +54,7 @@ if page == "Home":
 
     st.subheader('Date from 2010 - 2024')
 
-    st.write(df.describe())
+    #st.write(df.describe())
 
 
     st.subheader('Closing Price vs Time Chart')
