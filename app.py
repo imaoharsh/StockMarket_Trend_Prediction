@@ -3,12 +3,14 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import pandas_datareader.data as data
 import datetime as dt
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 import streamlit as st
 from sklearn.preprocessing import MinMaxScaler
 import base64
 import hydralit_components as hc
-import datetime
+
+from tensorflow.keras.models import load_model
+
 import nasdaqdatalink as link
 
 link.read_key(filename='key.txt')
