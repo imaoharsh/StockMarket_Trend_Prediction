@@ -133,19 +133,7 @@ if page == "Home":
     y_predicted=y_predicted*scale_factor
     y_test=y_test *scale_factor
 
-
-
-    #st.subheader('Predicted Price vs Original Price')
-    fig2=plt.figure(figsize=(12, 6))  # Use the 'figsize' parameter to set the figure size
-
-    #plt.plot(y_test, 'b', label='Original Price')
-    #plt.plot(y_predicted, 'r', label='Predicted Price')
-    #plt.xlabel('Time')
-
-    # Additional plot settings or annotations can be added here
-
-    #plt.legend()  # Add legend if necessary
-    #st.pyplot(fig2)
+  
 
 
 elif page == "Insights":
