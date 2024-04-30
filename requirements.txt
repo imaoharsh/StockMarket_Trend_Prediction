@@ -8,6 +8,7 @@ Requests
 scikit_learn
 streamlit
 streamlit_navigation_bar
-keras
 tensorflow
 Nasdaq-Data-Link
+tensorflow~=2.16.1 
+keras~=3.0
