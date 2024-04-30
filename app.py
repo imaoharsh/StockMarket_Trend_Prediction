@@ -105,7 +105,7 @@ if page == "Home":
     data_training_array=scaler.fit_transform(data_training)
 
         
-    model=load_model('stock_model.keras')
+    model=load_model('stock_model.h5')
 
 
     past_100_days=data_training.tail(100)
