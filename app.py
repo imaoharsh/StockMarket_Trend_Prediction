@@ -54,13 +54,13 @@ if page == "Home":
 
     st.subheader('Date from 2010 - 2024')
 
-    #st.write(df.describe())
+    st.write(df.describe())
 
 
-    #st.subheader('Closing Price vs Time Chart')
-    #fig=plt.figure(figsize=(12,6))
-    #plt.plot(df.Close)
-    #st.pyplot(fig)
+    st.subheader('Closing Price vs Time Chart')
+    fig=plt.figure(figsize=(12,6))
+    plt.plot(df.Close)
+    st.pyplot(fig)
 
 
     st.subheader('Closing Price vs Time Chart with MA100')
