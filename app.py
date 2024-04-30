@@ -8,8 +8,8 @@ import streamlit as st
 from sklearn.preprocessing import MinMaxScaler
 import base64
 import hydralit_components as hc
-
-from tensorflow.keras.models import load_model
+import tensorflow.keras as keras
+from keras.models import load_model
 
 import nasdaqdatalink as link
 
