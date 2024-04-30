@@ -11,6 +11,7 @@ import hydralit_components as hc
 import datetime
 import nasdaqdatalink as link
 
+link.read_key(filename='key.txt')
 from streamlit_navigation_bar import st_navbar
 
 page = st_navbar(["Home", "News", "Insights", "Community", "About"])
@@ -47,10 +48,17 @@ if page == "Home":
     
     
 
-    #user_input=st.text_input('Enter Stock Ticker','AAPL')
+    user_input=st.text_input('Enter Stock Ticker','NSE/OIL')
     #df = data.DataReader(user_input, 'stooq')
 
-    df = link.get("WSE/WIG20TR")
+    df = link.get(user_input)
+    
+   
+    
+    
+    
+    
+    
     #Describing Data
 
     st.subheader('Date from 2010 - 2024')
