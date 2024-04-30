@@ -47,7 +47,7 @@ if page == "Home":
     st.title(':white[Stock Market Trend Prediction And Analysis]')
 
     user_input=st.text_input('Enter Stock Ticker','AAPL')
-    df = data.DataReader(user_input, 'stooq')
+    df = data.DataReader(user_input, 'yahoo')
 
 
     #Describing Data
