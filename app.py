@@ -45,9 +45,12 @@ if page == "Home":
 
 
     st.title(':white[Stock Market Trend Prediction And Analysis]')
+    
+    start='2010-01-01'
+    end='2019-12-31'
 
     user_input=st.text_input('Enter Stock Ticker','AAPL')
-    df = data.DataReader(user_input, 'yahoo')
+    df = data.DataReader(user_input, 'yahoo',start,end)
 
 
     #Describing Data
