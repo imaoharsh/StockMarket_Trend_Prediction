@@ -1,1 +1,0 @@
-df = data.DataReader(user_input, 'stooq')

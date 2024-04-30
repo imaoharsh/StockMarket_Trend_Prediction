@@ -1,5 +1,4 @@
 hydralit_components
-keras
 matplotlib
 numpy
 pandas
