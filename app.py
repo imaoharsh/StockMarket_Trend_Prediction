@@ -105,7 +105,7 @@ if page == "Home":
     data_training_array=scaler.fit_transform(data_training)
 
         
-    model=tf.keras.models.load_model("")
+    model=tf.keras.models.load_model("stock_model.keras")
 
 
     past_100_days=data_training.tail(100)
