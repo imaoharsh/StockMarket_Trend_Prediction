@@ -10,3 +10,4 @@ streamlit
 streamlit_navigation_bar
 keras
 tensorflow
+Nasdaq-Data-Link
