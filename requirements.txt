@@ -8,3 +8,5 @@ Requests
 scikit_learn
 streamlit
 streamlit_navigation_bar
+keras
+tensorflow
