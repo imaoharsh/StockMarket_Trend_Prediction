@@ -50,7 +50,7 @@ if page == "Home":
     
     
 
-    user_input=st.text_input('Enter Stock Ticker','NSE/OIL')
+    user_input=st.text_input('Enter Stock Ticker','NSE/TATASTEEL')
     #df = data.DataReader(user_input, 'stooq')
 
     df = link.get(user_input)
@@ -63,13 +63,13 @@ if page == "Home":
     
     #Describing Data
 
-    st.subheader('Date from 2010 - 2024')
+    
 
     st.write(df.describe())
 
 
     st.subheader('Closing Price vs Time Chart')
-    fig=plt.figure(figsize=(12,6))
+    fig=plt.figure(figsize=(12,8))
     plt.plot(df.Close)
     st.pyplot(fig)
 
@@ -81,13 +81,15 @@ if page == "Home":
     plt.plot(df.Close)
     st.pyplot(fig)
 
-    st.subheader('Closing Price vs Time Chart with MA200')
+    st.subheader('Closing Price vs Time Chart ')
     ma100=df.Close.rolling(100).mean()
     ma200=df.Close.rolling(200).mean()
     fig=plt.figure(figsize=(12,6))
-    plt.plot(ma100)
-    plt.plot(ma200)
+    plt.plot(ma100,label='MA100')
+    plt.plot(ma200,label='Predicted Price')
     plt.plot(df.Close)
+    
+    plt.legend()
     st.pyplot(fig)
 
 
@@ -133,17 +135,17 @@ if page == "Home":
 
 
 
-    st.subheader('Predicted Price vs Original Price')
+    #st.subheader('Predicted Price vs Original Price')
     fig2=plt.figure(figsize=(12, 6))  # Use the 'figsize' parameter to set the figure size
 
-    plt.plot(y_test, 'b', label='Original Price')
-    plt.plot(y_predicted, 'r', label='Predicted Price')
-    plt.xlabel('Time')
+    #plt.plot(y_test, 'b', label='Original Price')
+    #plt.plot(y_predicted, 'r', label='Predicted Price')
+    #plt.xlabel('Time')
 
     # Additional plot settings or annotations can be added here
 
-    plt.legend()  # Add legend if necessary
-    st.pyplot(fig2)
+    #plt.legend()  # Add legend if necessary
+    #st.pyplot(fig2)
 
 
 elif page == "Insights":
